@@ -68,7 +68,7 @@ def video():
     button_audio.config(relief=tk.RAISED)
     
     if playlist_on==0: 
-        resolution="360p"
+        resolution="720p"
         #Change message
         message1="Resolution: " 
         message= message1+resolution
@@ -370,7 +370,7 @@ def download_media(yt):
 
     #download video    
     else:
-        if resolution=="360p":
+        if resolution=="720p":
             video = yt.streams.filter(res=resolution).first()
             video.download(rep)
                         
@@ -434,7 +434,7 @@ button = tk.Button(root, text="Change quality", command=lambda: quality(entry.ge
 button.place(relx=0.2, rely=0.55, relwidth=0.55)
 
 #text info sur la qualité
-text = tk.Label(root, text= "resolution : 360p")
+text = tk.Label(root, text= "resolution : 720p")
 text.place(relx=0.2, rely=0.70, relwidth=0.55)
 
 #choose file
