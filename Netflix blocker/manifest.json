@@ -4,10 +4,22 @@
   "version": "1",
   "description" : "A basic custom made Netflix blocker that works how adblockers work",
   "permissions": [  "webRequest",
+  "webRequestBlocking",
   "declarativeNetRequest", 
   "declarativeNetRequestWithHostAccess" , 
   "declarativeNetRequestFeedback"  
   ],
+
+
+  "host_permissions": [
+    "*://*.netflix.com/*",
+    "*://*.primevideo.com/*",
+    "*://*.amazon.com/*",
+    "*://*.crunchyroll.com/*",
+    "*://*.disneyplus.com/*",
+    "*://*.twitch.tv/*"
+  ],
+
 
   "background" : {
     "background.service_worker" : ["background.js"]
