@@ -1,6 +1,6 @@
 {
   "manifest_version" : 3,
-  "name": "Netflix blocker"
+  "name": "Netflix, Amazon video, crunchyroll, disneyplus, twitch  blocker"
   "version": "1",
   "description" : "A basic custom made Netflix blocker that works how adblockers work",
   "permissions": [  "webRequest",
